@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF74A3D12211BBF30034AA27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF74A3D02211BBF30034AA27 /* AppDelegate.m */; };
+		BF74A3D32211BBF50034AA27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF74A3D22211BBF50034AA27 /* Assets.xcassets */; };
+		BF74A3D62211BBF50034AA27 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF74A3D42211BBF50034AA27 /* MainMenu.xib */; };
+		BF74A3D92211BBF50034AA27 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF74A3D82211BBF50034AA27 /* main.mm */; };
+		BF74A3E22211BD190034AA27 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF74A3E12211BD190034AA27 /* CoreML.framework */; };
+		BF74A3E42211BD310034AA27 /* SsdMobilenet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BF74A3E32211BD310034AA27 /* SsdMobilenet.mlmodel */; };
+		BF74A3E62211C1540034AA27 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF74A3E52211C1540034AA27 /* CoreImage.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF74A3CC2211BBF30034AA27 /* CoreMlLeakTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMlLeakTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF74A3CF2211BBF30034AA27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF74A3D02211BBF30034AA27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF74A3D22211BBF50034AA27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF74A3D52211BBF50034AA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BF74A3D72211BBF50034AA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF74A3D82211BBF50034AA27 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		BF74A3DA2211BBF50034AA27 /* CoreMlLeakTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreMlLeakTest.entitlements; sourceTree = "<group>"; };
+		BF74A3E12211BD190034AA27 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		BF74A3E32211BD310034AA27 /* SsdMobilenet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SsdMobilenet.mlmodel; sourceTree = "<group>"; };
+		BF74A3E52211C1540034AA27 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF74A3C92211BBF30034AA27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF74A3E62211C1540034AA27 /* CoreImage.framework in Frameworks */,
+				BF74A3E22211BD190034AA27 /* CoreML.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF74A3C32211BBF30034AA27 = {
+			isa = PBXGroup;
+			children = (
+				BF74A3CE2211BBF30034AA27 /* CoreMlLeakTest */,
+				BF74A3CD2211BBF30034AA27 /* Products */,
+				BF74A3E02211BD190034AA27 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF74A3CD2211BBF30034AA27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF74A3CC2211BBF30034AA27 /* CoreMlLeakTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF74A3CE2211BBF30034AA27 /* CoreMlLeakTest */ = {
+			isa = PBXGroup;
+			children = (
+				BF74A3CF2211BBF30034AA27 /* AppDelegate.h */,
+				BF74A3D02211BBF30034AA27 /* AppDelegate.m */,
+				BF74A3D22211BBF50034AA27 /* Assets.xcassets */,
+				BF74A3D42211BBF50034AA27 /* MainMenu.xib */,
+				BF74A3D72211BBF50034AA27 /* Info.plist */,
+				BF74A3E32211BD310034AA27 /* SsdMobilenet.mlmodel */,
+				BF74A3D82211BBF50034AA27 /* main.mm */,
+				BF74A3DA2211BBF50034AA27 /* CoreMlLeakTest.entitlements */,
+			);
+			name = CoreMlLeakTest;
+			sourceTree = "<group>";
+		};
+		BF74A3E02211BD190034AA27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF74A3E52211C1540034AA27 /* CoreImage.framework */,
+				BF74A3E12211BD190034AA27 /* CoreML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF74A3CB2211BBF30034AA27 /* CoreMlLeakTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF74A3DD2211BBF50034AA27 /* Build configuration list for PBXNativeTarget "CoreMlLeakTest" */;
+			buildPhases = (
+				BF74A3C82211BBF30034AA27 /* Sources */,
+				BF74A3C92211BBF30034AA27 /* Frameworks */,
+				BF74A3CA2211BBF30034AA27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreMlLeakTest;
+			productName = CoreMlLeakTest;
+			productReference = BF74A3CC2211BBF30034AA27 /* CoreMlLeakTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF74A3C42211BBF30034AA27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = NewChromantics;
+				TargetAttributes = {
+					BF74A3CB2211BBF30034AA27 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = BF74A3C72211BBF30034AA27 /* Build configuration list for PBXProject "CoreMlLeakTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF74A3C32211BBF30034AA27;
+			productRefGroup = BF74A3CD2211BBF30034AA27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF74A3CB2211BBF30034AA27 /* CoreMlLeakTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF74A3CA2211BBF30034AA27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF74A3D32211BBF50034AA27 /* Assets.xcassets in Resources */,
+				BF74A3D62211BBF50034AA27 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF74A3C82211BBF30034AA27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF74A3D92211BBF50034AA27 /* main.mm in Sources */,
+				BF74A3D12211BBF30034AA27 /* AppDelegate.m in Sources */,
+				BF74A3E42211BD310034AA27 /* SsdMobilenet.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF74A3D42211BBF50034AA27 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF74A3D52211BBF50034AA27 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF74A3DB2211BBF50034AA27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BF74A3DC2211BBF50034AA27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BF74A3DE2211BBF50034AA27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoreMlLeakTest/CoreMlLeakTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NewChromantics.CoreMlLeakTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF74A3DF2211BBF50034AA27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoreMlLeakTest/CoreMlLeakTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NewChromantics.CoreMlLeakTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF74A3C72211BBF30034AA27 /* Build configuration list for PBXProject "CoreMlLeakTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF74A3DB2211BBF50034AA27 /* Debug */,
+				BF74A3DC2211BBF50034AA27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF74A3DD2211BBF50034AA27 /* Build configuration list for PBXNativeTarget "CoreMlLeakTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF74A3DE2211BBF50034AA27 /* Debug */,
+				BF74A3DF2211BBF50034AA27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF74A3C42211BBF30034AA27 /* Project object */;
+}
