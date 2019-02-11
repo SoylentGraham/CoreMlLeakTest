@@ -20,15 +20,21 @@ int main(int argc, const char * argv[])
 {
 	auto* Pixels = MakePixelBuffer(300,300);
 	
-	SsdMobilenet* ssd = nullptr;
+	SsdMobilenet* ssd = [[SsdMobilenet alloc] init];
+	//SsdMobilenet* ssd = nullptr;
 
 	for ( auto i=0;	i<10000;	i++ )
 	{
+		NSAutoreleasePool* pool= [[NSAutoreleasePool alloc]init];
 		if ( !ssd )
 		{
 			ssd = [[SsdMobilenet alloc] init];
 		}
 		auto* Output = [ssd predictionFromPreprocessor__sub__0:Pixels error:nullptr];
+		//[Output release];
+		//[ssd release];
+		//ssd = nullptr;
+		[pool drain];
 	}
 	return 0;
 }
